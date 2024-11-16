@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header section */
+header {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin-bottom: 0.3em;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0.5em;
+    list-style-type: none;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 1em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 3em;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #007bff;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 10em;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #555;
+    white-space: nowrap; /* 禁止換行 */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a {
+    padding: 0.5em 1em;
+    display: block;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main content */
+main {
+    text-align: left;
+    margin: 1em auto;
+    max-width: 800px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+}
+
+main a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+
